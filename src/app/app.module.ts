@@ -22,6 +22,12 @@ import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.com
 import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
 import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
 import { ViewTutorialsComponent } from './components/view-tutorials/view-tutorials.component';
+import { TeacherComponent } from './components/teacher/teacher.component';
+import { StudentComponent } from './components/student/student.component';
+import { HeaderComponent } from './components/header/header.component';
+import { LoginComponent } from './components/login/login.component';
+import { EcparentComponent } from './components/ecparent/ecparent.component';
+import { EcchildComponent } from './components/ecchild/ecchild.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +36,13 @@ import { ViewTutorialsComponent } from './components/view-tutorials/view-tutoria
     AddTutorialComponent,
     TutorialDetailsComponent,
     TutorialsListComponent,
-    ViewTutorialsComponent
+    ViewTutorialsComponent,
+    TeacherComponent,
+    StudentComponent,
+    HeaderComponent,
+    LoginComponent,
+    EcparentComponent,
+    EcchildComponent
   ],
   imports: [
     BrowserModule,

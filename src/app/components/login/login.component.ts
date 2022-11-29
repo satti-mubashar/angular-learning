@@ -1,0 +1,23 @@
+import { Component , EventEmitter, Output,OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
+})
+export class LoginComponent implements OnInit {
+
+  userName: string = '';
+  @Output('login') login = new EventEmitter<string>();
+  constructor() { }
+ 
+  ngOnInit() {
+  }
+ 
+  submit()
+  {
+  console.log(this.userName)
+  this.login.emit(this.userName);
+  }
+ 
+ }
